@@ -1,0 +1,20 @@
+server {
+        listen 80;
+        listen [::]:80;
+
+        root /home/cheryl/hw01;
+
+        index index.html;
+
+        server_name hw01.downie.tech;
+
+        location / {
+                # First attempt to serve request as file, then
+                # as directory, then fall back to displaying a 404.
+                try_files $uri $uri/ =404;
+        }
+}
+
+#This code was taken directly from the lecture notes at
+#http://www.ccis.northeastern.edu/home/ntuck/courses/2019/01/cs4550/notes/01-wel#come/notes.html from Nat Tuck, with the only changes being to the root and
+#server_names to reflect my website. 
