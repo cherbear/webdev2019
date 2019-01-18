@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang=”en”>
+<head>
+<title>Four-Function Calculator</title>
+<meta charset=”utf-8”>
+<link rel="stylesheet" href="calc.css">
+</head>
+
+<body>
+        <h1>Calculator</h1>
+
+	<table>
+		<tr>
+			<th id="display-window" colspan="4">&nbsp;</th>
+		</tr>
+		<tr>
+			<td><button id="7">7</button></td>
+			<td><button id="8">8</button></td>
+			<td><button id="9">9</button></td>
+			<td><button id="add-equals">+=</button></td>
+		</tr>
+		<tr>
+			<td><button id="4">4</button></td>
+			<td><button id="5">5</button></td>
+			<td><button id="6">6</button></td>
+			<td><button id="subtract">-</button></td>
+		</tr>
+		<tr>
+			<td><button id="1">1</button></td>
+			<td><button id="2">2</button></td>
+			<td><button id="3">3</button></td>
+			<td><button id="multiply">x</button></td>
+		</tr>
+		 <tr>
+			<td><button id="clear">C</button></td>
+			<td><button id="0">0</button></td>
+			<td><button id="decimal-point">.</button></td>
+			<td><button id="divide">/</button></td>
+                </tr>
+	</table>
+	
+	<p></p>
+	<h2>Instructions for use:</h2>
+	<ul>
+	<li>Numbers can be no more than 9 digits (or 8 digits and 1 decimal) long, additional number input beyond that specified will do nothing</li>
+	<li>Only 1 decimal point can be in any entered number, pressing it again will do nothing</li>
+	<li>After an operation is evaluated the resulting number can be immediately added, subtracted,
+	    multiplied, or divided by another number after clicking the desired operator</li>
+	</ul>
+        <p><a href="http://www.downie.tech">Return to main page</a>
+
+	<script src="calc.js"></script>
+</body>
+
+</html>
